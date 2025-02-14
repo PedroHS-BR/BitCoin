@@ -8,12 +8,12 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bitcoin.HelloController">
    <children>
       <Button layoutX="60.0" layoutY="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="2 Blocos" />
       <Button layoutX="430.0" layoutY="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="0 BTC" />
       <Button layoutX="310.0" layoutY="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="2120 BTC" />
-      <Button layoutX="180.0" layoutY="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="9000000 BTC" />
+      <Button fx:id="bloco1Button" layoutX="180.0" layoutY="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="9000000 BTC" />
       <Button layoutX="520.0" layoutY="14.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="66.0" text="Historico&gt;">
          <font>
             <Font size="10.0" />

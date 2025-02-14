@@ -19,7 +19,6 @@ public class HelloApplication extends Application {
         stage.getIcons().add(icon);
         stage.setTitle("Bitcoin");
         stage.setResizable(false);
-        Bloco bloco = new Bloco();
 
         stage.setScene(scene);
         stage.show();

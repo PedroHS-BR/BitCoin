@@ -7,19 +7,20 @@ public class Bloco {
     private int id;
     private Transacao transacao;
     private Transacao[] transacoes;
-    private Double valorTotal;
+    private Double valorTotal = 0.0;
 
     public Bloco() {
         this.transacoes = new Transacao[10];
         this.id = ++idContador;
     }
 
-    public boolean addTransacao(Transacao transacao) {
-        if (transacaoContador >= 10 || transacao == null) return false;
+    public byte addTransacao(Transacao transacao) {
+        if (transacaoContador >= 10) return 1;
+        if (transacao == null) return -1;
         transacoes[transacaoContador] = transacao;
         transacaoContador++;
         this.calculaValorTotal();
-        return true;
+        return 0;
     }
 
     public void calculaValorTotal() {
