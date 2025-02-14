@@ -1,5 +1,6 @@
 package com.example.bitcoin;
 
+import Beans.Bloco;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,7 +19,7 @@ public class HelloApplication extends Application {
         stage.getIcons().add(icon);
         stage.setTitle("Bitcoin");
         stage.setResizable(false);
-
+        Bloco bloco = new Bloco();
 
         stage.setScene(scene);
         stage.show();
