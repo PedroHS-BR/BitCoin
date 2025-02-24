@@ -7,11 +7,12 @@ public class Bloco {
     private int id;
     private Transacao transacao;
     private Transacao[] transacoes;
-    private Double valorTotal = 0.0;
+    private Double valorTotal;
 
     public Bloco() {
         this.transacoes = new Transacao[10];
         this.id = ++idContador;
+        this.valorTotal = 0.0;
     }
 
     public byte addTransacao(Transacao transacao) {
@@ -19,16 +20,16 @@ public class Bloco {
         if (transacao == null) return -1;
         transacoes[transacaoContador] = transacao;
         transacaoContador++;
-        this.calculaValorTotal();
+        this.valorTotal = this.calculaValorTotal();
         return 0;
     }
 
-    public void calculaValorTotal() {
+    public double calculaValorTotal() {
         double valorTotal = 0;
         for (int i = 0; i < transacaoContador; i++) {
             valorTotal += transacoes[i].getValor();
         }
-        this.valorTotal = valorTotal;
+        return valorTotal;
     }
 
 

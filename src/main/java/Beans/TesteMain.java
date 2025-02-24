@@ -2,15 +2,17 @@ package Beans;
 
 public class TesteMain {
     public static void main(String[] args) {
-        Transacao transacao = new Transacao(150, "asd", "dsa");
-        Transacao transacao2 = new Transacao(250, "asd", "dsa");
+        BlockChain blockChain = new BlockChain();
 
-        Bloco bloco = new Bloco();
 
-        bloco.addTransacao(transacao);
-        bloco.addTransacao(transacao2);
 
-        System.out.println(bloco.getValorTotal());
+
+        System.out.println(blockChain.calculaValorTotal());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+
+
+
+
 
     }
 }
