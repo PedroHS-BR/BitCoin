@@ -8,50 +8,7 @@ public class BlockChain {
     ArrayList<Bloco> blocosEmEspera = new ArrayList<>();
 
     public BlockChain(){
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
-        this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
+        //this.AdicionarTransacao(new Transacao(10,"nome", "asa"));
     }
 
     public void AdicionarTransacao(Transacao transacao) {
