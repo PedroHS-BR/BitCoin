@@ -31,12 +31,19 @@ public class HelloController {
         else bloco2Button.setText(blockChain.getBlocosEmEspera().size() - 1 + " Blocos");
     }
 
+    public void openSendWindow(){
+        this.openWindow("SendWindow.fxml");
+    }
+
+    public void openImportWindow() {
+        this.openWindow("ImportWindow.fxml");
+    }
 
 
 
-    public void openSendWindow() {
+    public void openWindow(String janela) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("SendWindow.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(janela));
             Parent root = loader.load();
 
             Stage novaJanela = new Stage();
@@ -53,5 +60,7 @@ public class HelloController {
             e.printStackTrace();
         }
     }
+
+
 
 }
