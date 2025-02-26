@@ -9,6 +9,22 @@ public class TesteMain {
 
         System.out.println(blockChain.calculaValorTotal());
         System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+        System.out.println(blockChain.getBlocosEmEspera().size());
+
+
+
 
 
 
