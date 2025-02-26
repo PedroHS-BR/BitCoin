@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -22,9 +23,10 @@ public class HelloController {
 
     private static BlockChain blockChain;
 
-    public static void criarTransacao(double valor, String origem, String destino) {
+    public void criarTransacao(double valor, String origem, String destino) {
         blockChain.AdicionarTransacao(new Transacao(valor, origem, destino));
         System.out.println(blockChain.calculaValorTotal());
+        atualizarBotoesDados();
     }
 
     public void imprimirsaldo(){
@@ -35,20 +37,28 @@ public class HelloController {
         // Criar um objeto Aluno e pegar o nome
         blockChain = new BlockChain();
 
-
         // Alterar o texto do botão
         atualizarBotoesDados();
     }
 
 
+
     public void atualizarBotoesDados(){
-        if (blockChain.getBlocosEmEspera().size() == 0) {
+        if (blockChain.getBlocosEmEspera().isEmpty()) {
             bloco1Button.setText("0 BTC");
             bloco2Button.setText("0 BTC");
+            System.out.println("nenhum bloco");
             return;
         }
 
         bloco1Button.setText(blockChain.getBlocosEmEspera().getFirst().getValorTotal() + " BTC");
+        Transacao[] transacoes = blockChain.getBlocosEmEspera().getFirst().getTransacoes();
+        for (int i = 0; i < 10; i++){
+            if (transacoes[i] != null) {
+                System.out.println("tem transação");
+            }
+            else System.out.println("não tem transação");
+        }
         if (blockChain.getBlocosEmEspera().size() == 1) bloco2Button.setText("0 BTC");
         else if (blockChain.getBlocosEmEspera().size() == 2) bloco2Button.setText(blockChain.getBlocosEmEspera().get(1).getValorTotal() + " BTC");
         else bloco2Button.setText(blockChain.getBlocosEmEspera().size() - 1 + " Blocos");
@@ -67,14 +77,13 @@ public class HelloController {
         this.openWindow("ReceiveWindow.fxml", "Receber");
     }
 
-
-
-
-
     public void openWindow(String janela, String titulo) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(janela));
             Parent root = loader.load();
+
+            //SendWindowController controller = loader.getController();
+            //controller.setMainController(this);
 
             Stage novaJanela = new Stage();
             novaJanela.initModality(Modality.APPLICATION_MODAL); // Bloqueia interação com a janela principal
